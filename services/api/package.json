@@ -5,13 +5,13 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "fixtures:record": "tsx scripts/record-rpc-fixtures.ts",
-    "dev": "tsx watch src/main.ts",
-    "start": "node dist/main.js",
+    "dev": "node init && tsx watch src/main.ts",
+    "start": "node init && node dist/main.js",
     "cli": "tsx src/cli.ts",
     "demo:testnet": "tsx src/demo/testnet.ts"
   },

@@ -1,9 +1,12 @@
 node_modules/
-.env*
 !.env.example
 target/
+temp_auto_push.bat
 dist/
 coverage/
 .DS_Store
 data/
 *.tsbuildinfo
+.gitignore
+branch_structure.json
+config.bat
